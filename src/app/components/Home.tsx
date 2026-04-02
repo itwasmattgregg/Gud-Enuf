@@ -13,8 +13,7 @@ export function Home() {
             <span className="italic">actually</span> gud enuf.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            No hustle culture. No venture capital drama. Just burnt-out ex-big-tech engineers
-            building software that helps you build real relationships with your customers.
+            We build sustainable software systems designed to reduce complexity, stay maintainable for years, and serve the people who depend on them — not growth targets.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -58,19 +57,23 @@ export function Home() {
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <p>Companies that listen to their users and actually care about feedback</p>
+                  <p>Nonprofits, cooperatives, and community organizations</p>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p>Small businesses and mission-driven founders avoiding VC pressure</p>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p>Teams tired of rebuilding the same system every two years</p>
+                </div>
+                <div className="flex gap-3">
+                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p>Organizations that want a long-term partner, not a vendor</p>
                 </div>
                 <div className="flex gap-3">
                   <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <p>Teams building sustainable, profitable businesses (not chasing unicorn exits)</p>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <p>Organizations focused on strengthening customer relationships</p>
-                </div>
-                <div className="flex gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <p>People who value work-life balance and reasonable timelines</p>
                 </div>
               </div>
             </div>
@@ -112,28 +115,34 @@ export function Home() {
               <div className="bg-card p-8 rounded-xl border border-border">
                 <h3 className="text-2xl mb-3">Good enough</h3>
                 <p className="text-muted-foreground">
-                  Perfect is the enemy of done. We ship working software that solves real problems,
-                  then iterate based on actual user feedback.
+                  "Good enough" isn't settling — it's restraint. It's the discipline to stop when something works well and resist complexity that adds no real value.
                 </p>
               </div>
 
               <div className="bg-card p-8 rounded-xl border border-border">
-                <h3 className="text-2xl mb-3">Sustainable</h3>
+                <h3 className="text-2xl mb-3">Built to last</h3>
                 <p className="text-muted-foreground">
-                  No death marches. No crunch time. We build at a pace that's healthy for everyone involved,
-                  including your team and ours.
+                  We optimize for year five, not launch day. Maintainable code, clear architecture, and honest documentation outlast any sprint cycle.
                 </p>
               </div>
 
               <div className="bg-card p-8 rounded-xl border border-border">
-                <h3 className="text-2xl mb-3">Human-first</h3>
+                <h3 className="text-2xl mb-3">For people, not profit</h3>
                 <p className="text-muted-foreground">
-                  Technology should serve people, not the other way around. We build tools that help
-                  communities and companies connect authentically.
+                  Technology should strengthen communities and support cooperation — not trap organizations in systems optimized for someone else's growth targets.
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Benefit Corp Section */}
+      <section className="container mx-auto px-4 py-12">
+        <div className="max-w-3xl mx-auto text-center border border-border rounded-xl p-8">
+          <p className="text-muted-foreground text-lg">
+            We are a <strong>Minnesota Benefit Corporation</strong> — legally committed to considering community impact, worker well-being, and long-term sustainability alongside profit. We reinvest in the communities we're part of.
+          </p>
         </div>
       </section>
 

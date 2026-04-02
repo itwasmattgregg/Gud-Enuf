@@ -93,11 +93,11 @@ export function About() {
 
               <div className='bg-card p-8 rounded-xl border border-border'>
                 <Lightbulb className='w-10 h-10 mb-4 text-primary' />
-                <h3 className='text-2xl mb-3'>Iterative improvement</h3>
+                <h3 className='text-2xl mb-3'>Clarity over cleverness</h3>
                 <p className='text-muted-foreground'>
-                  Launch something useful, get feedback, make it better. Repeat.
-                  No need for 18-month "perfect" launches that miss the market
-                  entirely.
+                  The best solution is the one the next developer can confidently
+                  understand and maintain. We choose boring, proven patterns over
+                  impressive complexity.
                 </p>
               </div>
 
@@ -129,18 +129,60 @@ export function About() {
 
           <div className='bg-accent p-8 rounded-xl border border-border'>
             <p className='text-lg text-muted-foreground mb-4'>
-              <strong>Our backgrounds:</strong> Between us, we've worked for big
-              tech companies like Google, Shopify, Verizon, and various
-              successful (and not-so-successful) startups. We've built systems
-              that handle millions of requests, designed APIs used by thousands
-              of developers, and led teams through countless product launches.
+              <strong>Our background:</strong> We've spent years building
+              software at large companies and fast-moving startups — systems
+              handling real scale, used by real people. We've led product
+              launches, untangled legacy codebases, and navigated the full
+              spectrum of what happens when development moves faster than
+              understanding.
             </p>
             <p className='text-lg text-muted-foreground'>
-              <strong>What we learned:</strong> That most of that complexity was
-              unnecessary. That the best solutions are usually the simplest
-              ones. That treating people well actually leads to better outcomes.
-              Revolutionary, we know.
+              <strong>What we learned:</strong> Most complexity is unnecessary.
+              The best solutions are usually the simplest ones. Software that
+              nobody understands becomes software nobody trusts. And treating
+              people well — engineers, clients, and end users — leads to better
+              outcomes every time.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefit Corp Section */}
+      <section className='bg-accent py-20'>
+        <div className='container mx-auto px-4'>
+          <div className='max-w-3xl mx-auto'>
+            <h2 className='text-4xl md:text-5xl mb-8 text-center'>
+              A company with obligations
+            </h2>
+            <p className='text-xl text-muted-foreground text-center mb-10'>
+              We're a Minnesota Benefit Corporation — which means our legal structure
+              requires us to consider more than profit. Community impact, worker
+              well-being, and long-term sustainability are built into how we operate,
+              not just what we say.
+            </p>
+            <div className='grid md:grid-cols-3 gap-6 text-center'>
+              <div className='bg-card p-6 rounded-xl border border-border'>
+                <h3 className='text-lg font-medium mb-2'>Community reinvestment</h3>
+                <p className='text-muted-foreground text-sm'>
+                  A percentage of revenue goes back to local organizations and
+                  pro-bono technical work for nonprofits.
+                </p>
+              </div>
+              <div className='bg-card p-6 rounded-xl border border-border'>
+                <h3 className='text-lg font-medium mb-2'>Sustainable work</h3>
+                <p className='text-muted-foreground text-sm'>
+                  32–40 hour weeks. No mandatory overtime. Real rest.
+                  Healthy engineers build more reliable software.
+                </p>
+              </div>
+              <div className='bg-card p-6 rounded-xl border border-border'>
+                <h3 className='text-lg font-medium mb-2'>Environmental responsibility</h3>
+                <p className='text-muted-foreground text-sm'>
+                  Building less and building better reduces infrastructure,
+                  energy use, and hardware waste.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
