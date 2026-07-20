@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { CheckCircle2, XCircle, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ContactForm } from "./ContactForm";
 
 export function Home() {
   return (
@@ -148,20 +149,14 @@ export function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl mb-6">
             Sound like your kind of people?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
             If you're nodding along and not rolling your eyes, we should probably talk.
           </p>
-          <a
-            href="mailto:hello@gudenuf.com"
-            className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-lg"
-          >
-            Get in touch
-            <ArrowRight className="w-5 h-5" />
-          </a>
+          <ContactForm />
         </div>
       </section>
     </div>

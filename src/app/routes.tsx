@@ -3,6 +3,7 @@ import { Root } from "./components/Root";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Services } from "./components/Services";
+import { Contact } from "./components/Contact";
 import { NotFound } from "./components/NotFound";
 
 export const router = createBrowserRouter([
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "about", Component: About },
       { path: "services", Component: Services },
+      { path: "contact", Component: Contact },
       { path: "*", Component: NotFound },
     ],
   },
