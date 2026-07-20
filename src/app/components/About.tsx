@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Users, Heart, Lightbulb, Shield } from 'lucide-react';
 
@@ -195,12 +196,12 @@ export function About() {
             We're selective about who we work with—not because we're snobs, but
             because life's too short to work on projects we don't believe in.
           </p>
-          <a
-            href='mailto:hello@gudenuf.com'
+          <Link
+            to='/contact'
             className='inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-lg'
           >
             Let's talk
-          </a>
+          </Link>
         </div>
       </section>
     </div>

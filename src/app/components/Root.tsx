@@ -40,6 +40,12 @@ export function Root() {
             >
               Services
             </Link>
+            <Link
+              to="/contact"
+              className={`transition-colors ${isActive("/contact") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Contact
+            </Link>
           </div>
         </nav>
       </header>

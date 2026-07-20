@@ -6,6 +6,7 @@ import {
   MessageSquare,
   Wrench,
 } from 'lucide-react';
+import { Link } from 'react-router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Services() {
@@ -219,17 +220,24 @@ export function Services() {
         <div className='max-w-3xl mx-auto text-center'>
           <h2 className='text-4xl mb-6'>Let's see if we're a fit.</h2>
           <p className='text-xl text-muted-foreground mb-8'>
-            Send us an email describing what you're trying to build and who it's
-            for. We'll get back to you within a couple days.
+            Tell us what you're trying to build and who it's for. We'll get back
+            to you within a couple days.
           </p>
-          <a
-            href='mailto:hello@gudenuf.com'
+          <Link
+            to='/contact'
             className='inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-lg'
           >
-            hello@gudenuf.com
-          </a>
+            Get in touch
+          </Link>
           <p className='text-sm text-muted-foreground/70 mt-4'>
-            No forms. No sales calls. Just send an email like a normal person.
+            No sales calls. Just a short note — or email us at{' '}
+            <a
+              href='mailto:hello@gudenuf.com'
+              className='hover:text-primary transition-colors'
+            >
+              hello@gudenuf.com
+            </a>
+            .
           </p>
         </div>
       </section>

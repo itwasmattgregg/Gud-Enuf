@@ -84,9 +84,10 @@ fly deploy
 
 | Route | Component | Description |
 |---|---|---|
-| `/` | `Home.tsx` | Hero, problem statement, philosophy, services preview |
+| `/` | `Home.tsx` | Hero, problem statement, philosophy, services preview, contact form |
 | `/about` | `About.tsx` | Company story, manifesto, benefit corp statement |
 | `/services` | `Services.tsx` | Full service offerings |
+| `/contact` | `Contact.tsx` | Contact form (Formspree) |
 | `*` | `NotFound.tsx` | 404 page |
 
 ---
