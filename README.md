@@ -1,6 +1,12 @@
 # Good Enough Software Co. — Marketing Website
 
-This is the marketing website for **Good Enough Software Co.** (working name), a Minnesota Benefit Corporation built around one core belief: software should work for people, not for profit.
+This is the marketing website for **Good Enough Software Co.** (working name), a Minnesota Benefit Corporation built around one core belief:
+
+> **Technology should solve human problems, then get out of the way.**
+
+It is not here to replace people, and it is not here to hold anyone's attention all day "driving engagement." We are not trying to extract every ounce of value out of the universe — we are trying to build a world that is sustainable in every way: ecologically, economically, technically, and humanly.
+
+That statement is the spine of the site. Every page should be traceable back to it; the full version lives on `/manifesto`.
 
 ---
 
@@ -44,11 +50,10 @@ We optimize for:
 
 This repo contains the marketing website — the public face of the company. It covers:
 
-- Homepage
-- About / Manifesto
+- Homepage (hero belief + core convictions)
+- Manifesto (full statement of the belief)
+- About
 - Services
-- Engineering & Environmental Principles
-- Client Fit page
 - Contact
 
 Built with **React**, **Vite**, **Tailwind CSS**, and deployed to **Fly.io**.
@@ -84,8 +89,9 @@ fly deploy
 
 | Route | Component | Description |
 |---|---|---|
-| `/` | `Home.tsx` | Hero, problem statement, philosophy, services preview, contact form |
-| `/about` | `About.tsx` | Company story, manifesto, benefit corp statement |
+| `/` | `Home.tsx` | Hero, core beliefs, client fit, philosophy, contact form |
+| `/manifesto` | `Manifesto.tsx` | The core belief in full: tools over destinations, no engagement traps, no extraction, four kinds of sustainability |
+| `/about` | `About.tsx` | Company story, benefit corp statement |
 | `/services` | `Services.tsx` | Full service offerings |
 | `/contact` | `Contact.tsx` | Contact form (Formspree) |
 | `*` | `NotFound.tsx` | 404 page |

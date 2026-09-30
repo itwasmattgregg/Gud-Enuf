@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Users, Heart, Lightbulb, Shield } from 'lucide-react';
+import { ArrowRight, Users, Heart, Lightbulb, Shield } from 'lucide-react';
 
 export function About() {
   return (
@@ -47,6 +47,15 @@ export function About() {
             </p>
 
             <p className='text-muted-foreground mb-6'>
+              The worst of it was the direction the work kept pointing. Meetings
+              about how to hold someone's attention a little longer. Roadmaps
+              measured in engagement rather than problems solved. Headcount
+              plans that treated automation as a way to remove people instead of
+              a way to help them. Every quarter, another idea for squeezing a
+              bit more out of the same users.
+            </p>
+
+            <p className='text-muted-foreground mb-6'>
               We got burnt out. Not from working hard—we love building things.
               But from working on things that didn't matter, for companies that
               treated both their employees and customers as resources to be
@@ -59,6 +68,28 @@ export function About() {
               problems for real people, without all the unnecessary drama,
               politics, and hustle culture baggage.
             </p>
+
+            <p className='text-muted-foreground mb-10'>
+              Underneath the jokes about being "good enough," there's one belief
+              doing all the work: technology exists to solve human problems and
+              then get out of the way. It isn't here to replace us, and it isn't
+              here to keep us staring at a screen. We aren't trying to extract
+              every ounce of value out of the universe — we're trying to leave
+              behind a world that is sustainable in every sense of the word.
+            </p>
+
+            <div className='border-l-4 border-primary pl-6 py-2'>
+              <p className='text-2xl mb-4'>
+                Technology should solve human problems, then get out of the way.
+              </p>
+              <Link
+                to='/manifesto'
+                className='inline-flex items-center gap-2 text-primary hover:gap-3 transition-all'
+              >
+                Read the full manifesto
+                <ArrowRight className='w-4 h-4' />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -67,9 +98,12 @@ export function About() {
       <section className='bg-accent py-20'>
         <div className='container mx-auto px-4'>
           <div className='max-w-4xl mx-auto'>
-            <h2 className='text-4xl md:text-5xl mb-12 text-center'>
-              What we believe
+            <h2 className='text-4xl md:text-5xl mb-4 text-center'>
+              How we show up
             </h2>
+            <p className='text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto'>
+              The manifesto is the why. This is the day-to-day.
+            </p>
 
             <div className='grid md:grid-cols-2 gap-8'>
               <div className='bg-card p-8 rounded-xl border border-border'>

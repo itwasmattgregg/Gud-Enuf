@@ -17,8 +17,8 @@ export function Services() {
         <div className='max-w-4xl mx-auto'>
           <h1 className='text-5xl md:text-7xl mb-6'>What we actually do.</h1>
           <p className='text-xl md:text-2xl text-muted-foreground'>
-            Software consulting and SaaS products that help you build better
-            relationships with your customers. No buzzwords, no BS.
+            Software consulting and SaaS products built to solve one real human
+            problem and then get out of the way. No buzzwords, no BS.
           </p>
         </div>
       </section>
@@ -61,13 +61,13 @@ export function Services() {
               <Users2 className='w-12 h-12 mb-4 text-primary' />
               <h3 className='text-2xl mb-4'>Customer Relationship Tools</h3>
               <p className='text-muted-foreground mb-4'>
-                CRMs, community platforms, feedback systems—software that helps
-                you actually listen to and engage with your customers, not just
-                market to them.
+                CRMs, community platforms, feedback systems — software that helps
+                you listen and respond when people need you, then stay out of
+                their way the rest of the time.
               </p>
               <p className='text-sm text-muted-foreground/70'>
                 Custom solutions or thoughtful integrations with existing tools.
-                Whatever helps you build real relationships, not just databases.
+                Real relationships, not notification pipelines or attention traps.
               </p>
             </div>
 
@@ -89,11 +89,12 @@ export function Services() {
               <BarChart3 className='w-12 h-12 mb-4 text-primary' />
               <h3 className='text-2xl mb-4'>Data & Analytics</h3>
               <p className='text-muted-foreground mb-4'>
-                Set up analytics that tell you what's actually happening, not
-                just vanity metrics. Dashboards that people actually use.
+                Measurement that tells you whether people got what they came
+                for — not how long you managed to keep them. Dashboards that
+                people actually use.
               </p>
               <p className='text-sm text-muted-foreground/70'>
-                Customer behavior analysis, A/B testing, data pipelines, and
+                Privacy-respecting instrumentation, data pipelines, and
                 reporting that informs decisions instead of decorating slides.
               </p>
             </div>
