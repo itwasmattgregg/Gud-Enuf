@@ -50,11 +50,10 @@ We optimize for:
 
 This repo contains the marketing website — the public face of the company. It covers:
 
-- Homepage
-- About / Manifesto
+- Homepage (hero belief + core convictions)
+- Manifesto (full statement of the belief)
+- About
 - Services
-- Engineering & Environmental Principles
-- Client Fit page
 - Contact
 
 Built with **React**, **Vite**, **Tailwind CSS**, and deployed to **Fly.io**.

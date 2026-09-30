@@ -98,9 +98,12 @@ export function About() {
       <section className='bg-accent py-20'>
         <div className='container mx-auto px-4'>
           <div className='max-w-4xl mx-auto'>
-            <h2 className='text-4xl md:text-5xl mb-12 text-center'>
-              What we believe
+            <h2 className='text-4xl md:text-5xl mb-4 text-center'>
+              How we show up
             </h2>
+            <p className='text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto'>
+              The manifesto is the why. This is the day-to-day.
+            </p>
 
             <div className='grid md:grid-cols-2 gap-8'>
               <div className='bg-card p-8 rounded-xl border border-border'>

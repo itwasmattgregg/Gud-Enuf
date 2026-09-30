@@ -61,13 +61,13 @@ export function Services() {
               <Users2 className='w-12 h-12 mb-4 text-primary' />
               <h3 className='text-2xl mb-4'>Customer Relationship Tools</h3>
               <p className='text-muted-foreground mb-4'>
-                CRMs, community platforms, feedback systems—software that helps
-                you actually listen to and engage with your customers, not just
-                market to them.
+                CRMs, community platforms, feedback systems — software that helps
+                you listen and respond when people need you, then stay out of
+                their way the rest of the time.
               </p>
               <p className='text-sm text-muted-foreground/70'>
                 Custom solutions or thoughtful integrations with existing tools.
-                Whatever helps you build real relationships, not just databases.
+                Real relationships, not notification pipelines or attention traps.
               </p>
             </div>
 

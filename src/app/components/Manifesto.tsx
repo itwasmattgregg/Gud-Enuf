@@ -84,20 +84,36 @@ export function Manifesto() {
   return (
     <div>
       {/* Hero Section */}
-      <section className='container mx-auto px-4 py-20 md:py-28'>
-        <div className='max-w-4xl mx-auto'>
-          <p className='text-sm uppercase tracking-widest text-muted-foreground mb-6'>
-            Our manifesto
-          </p>
-          <h1 className='text-4xl md:text-6xl mb-8'>
-            Technology should solve human problems, then{' '}
-            <span className='italic'>get out of the way</span>.
-          </h1>
-          <p className='text-xl md:text-2xl text-muted-foreground'>
-            That's the core of it. Everything else on this site — the services,
-            the pricing, the benefit corporation paperwork — is a footnote to
-            that one sentence.
-          </p>
+      <section className='relative overflow-hidden'>
+        <div
+          className='absolute inset-0 -z-10'
+          style={{
+            background:
+              'radial-gradient(ellipse 70% 50% at 20% 0%, #d7e3d8 0%, transparent 50%), linear-gradient(180deg, #fafaf9 0%, #f5f5f4 100%)',
+          }}
+          aria-hidden='true'
+        />
+        <div className='container mx-auto px-4 py-20 md:py-28'>
+          <div className='max-w-4xl mx-auto'>
+            <p className='text-sm uppercase tracking-widest text-muted-foreground mb-6'>
+              Our manifesto
+            </p>
+            <h1 className='text-4xl md:text-6xl mb-8 animate-in-fade'>
+              Technology should solve human problems, then{' '}
+              <span className='italic'>get out of the way</span>.
+            </h1>
+            <p className='text-xl md:text-2xl text-muted-foreground mb-6 animate-in-fade animate-in-delay-1'>
+              That&apos;s the absolute core of what we believe. It isn&apos;t
+              meant to replace humans, or to be something we stare at all day
+              &ldquo;driving engagement.&rdquo; We should not be trying to
+              extract every ounce of value we can out of the universe. We should
+              be building a world that is sustainable in every way.
+            </p>
+            <p className='text-lg text-muted-foreground animate-in-fade animate-in-delay-2'>
+              Everything else on this site — the services, the pricing, the
+              benefit corporation paperwork — is a footnote to that.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -123,24 +139,23 @@ export function Manifesto() {
       {/* Sustainability Dimensions */}
       <section className='bg-accent py-20'>
         <div className='container mx-auto px-4'>
-          <div className='max-w-5xl mx-auto'>
-            <h2 className='text-4xl md:text-5xl mb-4 text-center'>
+          <div className='max-w-3xl mx-auto'>
+            <h2 className='text-4xl md:text-5xl mb-4'>
               Four kinds of sustainable
             </h2>
-            <p className='text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto'>
+            <p className='text-xl text-muted-foreground mb-12'>
               A project has to clear all four to count. Trading one for another
-              is just moving the bill to someone who isn't in the room.
+              is just moving the bill to someone who isn&apos;t in the room.
             </p>
 
-            <div className='grid md:grid-cols-2 gap-6'>
+            <div className='divide-y divide-border border-y border-border'>
               {dimensions.map(({ icon: Icon, title, body }) => (
-                <div
-                  key={title}
-                  className='bg-card p-8 rounded-xl border border-border'
-                >
-                  <Icon className='w-10 h-10 mb-4 text-primary' />
-                  <h3 className='text-2xl mb-3'>{title}</h3>
-                  <p className='text-muted-foreground'>{body}</p>
+                <div key={title} className='py-8 flex gap-5'>
+                  <Icon className='w-8 h-8 text-primary flex-shrink-0 mt-1' />
+                  <div>
+                    <h3 className='text-2xl mb-2'>{title}</h3>
+                    <p className='text-muted-foreground'>{body}</p>
+                  </div>
                 </div>
               ))}
             </div>

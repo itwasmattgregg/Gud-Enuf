@@ -60,10 +60,15 @@ export function Root() {
         <Outlet />
       </main>
 
-      <footer className="border-t py-8 mt-auto">
+      <footer className="border-t py-10 mt-auto">
         <div className="container mx-auto px-4">
-          <p className="text-center text-muted-foreground mb-6">
+          <p className="text-center text-lg md:text-xl mb-2 max-w-2xl mx-auto">
             Technology should solve human problems, then get out of the way.
+          </p>
+          <p className="text-center text-sm text-muted-foreground mb-8">
+            <Link to="/manifesto" className="hover:text-primary transition-colors">
+              Read the manifesto
+            </Link>
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
