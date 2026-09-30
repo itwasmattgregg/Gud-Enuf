@@ -3,32 +3,60 @@ import { CheckCircle2, XCircle, ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ContactForm } from "./ContactForm";
 
+const coreBeliefs = [
+  {
+    headline: "Software is a tool, not a destination.",
+    detail:
+      "The best thing a piece of software can do, most of the time, is nothing at all. It should answer the question, close the loop, and return you to your life.",
+  },
+  {
+    headline: "We're not trying to replace people.",
+    detail:
+      "Automation should take the tedium, not the part of the work that gives people meaning. The goal is a person with more time and more capability — not a person with no job.",
+  },
+  {
+    headline: "Engagement is not a virtue.",
+    detail:
+      "\"Time on site\" treats human attention as inventory. We don't build infinite scroll, manufactured streaks, dark patterns, or notifications designed to pull you back in.",
+  },
+  {
+    headline: "Enough is a real number.",
+    detail:
+      "We're not trying to extract every ounce of value out of the universe. There's always a version that squeezes harder; we're not interested in finding the limit.",
+  },
+  {
+    headline: "Sustainable in every way.",
+    detail:
+      "Ecologically, economically, technically, and humanly — all four at once. A system that burns out the people maintaining it is as broken as one that burns out the planet.",
+  },
+];
+
 export function Home() {
   return (
     <div>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl mb-6">
-            Software that's<br />
-            <span className="italic">actually</span> gud enuf.
+          <h1 className="text-4xl md:text-6xl mb-6">
+            Technology should solve human problems,<br className="hidden md:block" />
+            {" "}then <span className="italic">get out of the way</span>.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We build sustainable software systems designed to reduce complexity, stay maintainable for years, and serve the people who depend on them — not growth targets.
+            Software isn't meant to replace you, or to keep you staring at a screen all day "driving engagement." It's meant to do its job and leave you alone. That's what we build.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/services"
+              to="/manifesto"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
-              What we do
+              Read our manifesto
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              to="/about"
+              to="/services"
               className="inline-flex items-center justify-center gap-2 px-8 py-3 border-2 border-primary rounded-lg hover:bg-accent transition-colors"
             >
-              Who we are
+              What we do
             </Link>
           </div>
         </div>
@@ -42,6 +70,34 @@ export function Home() {
             alt="Relaxed developer working"
             className="w-full h-[400px] object-cover rounded-2xl"
           />
+        </div>
+      </section>
+
+      {/* Core Belief Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl mb-4">What we actually believe</h2>
+          <p className="text-xl text-muted-foreground mb-12">
+            We'd rather be clear about this up front than have you find out three
+            months into a project.
+          </p>
+
+          <div className="divide-y divide-border border-y border-border">
+            {coreBeliefs.map(({ headline, detail }) => (
+              <div key={headline} className="py-6">
+                <h3 className="text-2xl mb-2">{headline}</h3>
+                <p className="text-muted-foreground">{detail}</p>
+              </div>
+            ))}
+          </div>
+
+          <Link
+            to="/manifesto"
+            className="inline-flex items-center gap-2 mt-8 text-primary hover:gap-3 transition-all"
+          >
+            Read the full manifesto
+            <ArrowRight className="w-4 h-4" />
+          </Link>
         </div>
       </section>
 

@@ -21,12 +21,18 @@ export function Root() {
             </span>
           </Link>
 
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-end gap-x-5 gap-y-1">
             <Link
               to="/"
               className={`transition-colors ${isActive("/") && location.pathname === "/" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
             >
               Home
+            </Link>
+            <Link
+              to="/manifesto"
+              className={`transition-colors ${isActive("/manifesto") ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Manifesto
             </Link>
             <Link
               to="/about"
@@ -56,6 +62,9 @@ export function Root() {
 
       <footer className="border-t py-8 mt-auto">
         <div className="container mx-auto px-4">
+          <p className="text-center text-muted-foreground mb-6">
+            Technology should solve human problems, then get out of the way.
+          </p>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
               <Coffee className="w-5 h-5 text-primary" />
